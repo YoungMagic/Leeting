@@ -1,3 +1,4 @@
 # Leeting
-Doing leetcode
-ghjgh
+## 序
+- 17年四月左右开始用c++做Leetcode，为了熟悉编程语法以及基本算法和数据结构
+- 简单记录一下每道题的一些思路以供日后参考
