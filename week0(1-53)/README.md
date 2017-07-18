@@ -14,3 +14,15 @@
 
 ### 6. ZigZag Conversion
 用*numRows - 1*行来存储相应元素，最后将所以元素逐个相加。以*numRows - 1*为一个单位，*down*控制上下，当*row==numRows-2*时，*down=!down*
+
+### 7. Reverse Integer
+用*long long*型确保其不会溢出，*res = res * 10 + res % 10*。
+
+### 8. String to Integer (atoi)
+第一个不是空格开始，确定符号，数字大于0小于9则减去0得到数字，溢出同上。
+
+### 9. Palindrome Number
+双游标（一个除以10，一个除以100）获得右半边，判断奇偶
+
+### 11. Container With Most Water
+先以最宽为长计算面积，然后移动较小的那一根柱子
