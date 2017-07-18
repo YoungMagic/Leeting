@@ -26,3 +26,20 @@
 
 ### 11. Container With Most Water
 先以最宽为长计算面积，然后移动较小的那一根柱子
+
+### 12. Integer to Roman
+建立表格*    string table[4][10] ={{"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII","IX"},
+                          {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"},
+                          {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"},
+                          {"","M", "MM", "MMM"}*，再对号入座
+                
+### 13. Roman to Integer
+建立Hash表*unordered_map<char, int> T = {{'I', 1},
+                                      {'V',5},
+                                      {'X',10},
+                                      {'L',50},
+                                      {'C',100},
+                                      {'D',500},
+                                      {'M',1000}}；*从末尾开始入座，若后项大于前项则减这项，否则加
+
+                    
