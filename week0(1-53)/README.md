@@ -60,3 +60,6 @@
 ### 15. 3Sum
 先排序，使用双指针，for循环里用i定位，建立l,r双指针，如果得到结果，需要排除相同元素*if(i > 0 && (nums[i] == nums[i - 1])) continue*
                     
+### 16. 3Sum Closest
+排序，双指针，用*abs(target - curSum) < abs(target - clo)*表征距离，curSum是否大于target来决定指针移动方向
+
