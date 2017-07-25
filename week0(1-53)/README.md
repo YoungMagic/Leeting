@@ -66,3 +66,9 @@
 ### 17. Letter Combinations of a Phone Number
 cand存储下一个数字的字母，双for循环tmp临时存储结果，然后和result交换
 
+### 18. 4Sum
+sort,for,判断，**加速关键**如果最低四位大于target，break，如果nums[i] + 最大三位小于target，则continue。for，加速，判断，while，双指针，如果存在则push_back并且判断。
+
+### 19. Remove Nth Node From End of List
+一个二级指针指向头地址的地址，一个指针指向头指针，头指针先行，然后二级指针和头指针一起，最后*t1 = (*t1)->next。
+
