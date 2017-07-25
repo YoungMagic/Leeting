@@ -63,3 +63,6 @@
 ### 16. 3Sum Closest
 排序，双指针，用*abs(target - curSum) < abs(target - clo)*表征距离，curSum是否大于target来决定指针移动方向
 
+### 17. Letter Combinations of a Phone Number
+cand存储下一个数字的字母，双for循环tmp临时存储结果，然后和result交换
+
