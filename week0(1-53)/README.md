@@ -91,4 +91,11 @@ sort,for,判断，**加速关键**如果最低四位大于target，break，如�
 同上
 
 ### 28. Implement strStr()
-遍历数组，j来遍历needle
+遍历数组，j来遍历needle,若j=size,则存在
+
+### 29. Divide Two Integers
+确定符号，确定溢出情况，被除数若大于除数，tmp等于除数，若被除数大于tmp×2，res+2,被除数-tmp,等等，res带上符号
+
+### 31. Next Permutation
+如果为逆排序，则反转然后返回。如果不是，从后找到第一个正排序组的前位，和向后找到第一个比这个数大的值，交换，逆排序之后的数
+
