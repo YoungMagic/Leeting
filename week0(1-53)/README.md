@@ -106,3 +106,9 @@ sort,for,判断，**加速关键**如果最低四位大于target，break，如�
 - If target is let's say 7, then we adjust nums to this:
   [-inf, -inf, -inf, -inf, -inf, -inf, -inf, -inf, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]。
 如果mid和target位于nums[0]同一边，则num取mid，否则取正或负无穷。
+
+### 34. Search for a Range
+二分查找
+- 如果所有都刚好在区间内，返回区间
+- 如果目标在区间内，二分查找，返回左右两个区间，若左区间为-1，则返回右区间，若右区间为-1，则返回左区间，若都不是，返回区间的并
+- 返回空
