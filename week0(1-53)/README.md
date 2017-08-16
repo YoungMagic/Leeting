@@ -112,3 +112,9 @@ sort,for,判断，**加速关键**如果最低四位大于target，break，如�
 - 如果所有都刚好在区间内，返回区间
 - 如果目标在区间内，二分查找，返回左右两个区间，若左区间为-1，则返回右区间，若右区间为-1，则返回左区间，若都不是，返回区间的并
 - 返回空
+
+### 35. Search Insert Position
+二分查找用while，返回mid或者low 
+
+### 36. Valid Sudoku
+使用unordered_map<size_t, unordered_set<char>>数据结构建立三个map，分别为行，列，圈，如果插入失败，则false。为使[i][j]落入3*3网格，需使[i / 3 * 3 + j / 3]
