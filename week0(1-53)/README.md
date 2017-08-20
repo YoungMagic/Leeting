@@ -118,3 +118,12 @@ sort,for,判断，**加速关键**如果最低四位大于target，break，如�
 
 ### 36. Valid Sudoku
 使用unordered_map<size_t, unordered_set<char>>数据结构建立三个map，分别为行，列，圈，如果插入失败，则false。为使[i][j]落入3*3网格，需使[i / 3 * 3 + j / 3]
+
+### 38. Count and Say
+循环，硬解。双for循环，使用迭代器来计数，最后要加上不同的项。
+
+### 39. Combination Sum
+迭代。先排序，开始迭代：
+- 如果目标为0，则把之前的栈压入结果
+- for循环，其中i=begin，如果目标大于元素，元素压栈，迭代，其中target = target - 元素，出栈，否则break。
+
