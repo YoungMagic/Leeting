@@ -21,7 +21,7 @@ public:
         while ((a = *pp) && (b = a->next)){
             a->next = b->next;
             b->next = a;
-            *pp = b;
+            *pp = b;  //修改头结点
             pp = &(a->next);
         }
         return head;
