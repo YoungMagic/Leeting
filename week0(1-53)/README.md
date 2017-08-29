@@ -130,3 +130,13 @@ sort,for,判断，**加速关键**如果最低四位大于target，break，如�
 ### 40. Combination Sum II
 类似上题，不过因为元素不能重复，加入if (i > start && num[i] == num[i-1]) continue;
 
+### 43. Multiply Strings
+双for循环，从末尾开始计算，设置一个进位变量，一个临时变量存储乘积+进位+本来的值（所有值应减去'0')。这个位的值=tmp%10+'0'，carry= tmp/10
+
+### 46. Permutations
+dfs
+- 如果位置等于数组大小，则入栈
+- 要不然交换，递归，再交换
+
+### 53. Maximum Subarray
+sum记录和，ans记录结果，一个for循环，sum+当前值后和ans比较，sum和0比较。
