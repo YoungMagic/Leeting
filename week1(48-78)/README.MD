@@ -9,3 +9,6 @@
 
 ### 54. Spiral Matrix
 分上下左右方向，四个for循环，k为数组的下标，每次for循环后该方向+1，判断停止条件。
+
+### 55. Jump Game
+for循环，用reach记录可以到达的点， `reach = max(i + nums[i], reach)`。
