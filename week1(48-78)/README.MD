@@ -15,3 +15,6 @@ for循环，用reach记录可以到达的点， `reach = max(i + nums[i], reach)
 
 ### 56. Merge Intervals
 首先对所有的间隙排列，判断后一个的start是否位于前一个的end位置。res.back().end。
+
+### 58. Length of Last Word
+使用while语句，不为空且n为正常值
