@@ -18,3 +18,6 @@ for循环，用reach记录可以到达的点， `reach = max(i + nums[i], reach)
 
 ### 58. Length of Last Word
 使用while语句，不为空且n为正常值
+
+### 59. Spiral Matrix II
+while语句，四个方向一一计算，i,j作为索引，k作为值
