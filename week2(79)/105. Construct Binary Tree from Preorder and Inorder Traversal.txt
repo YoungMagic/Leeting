@@ -1,0 +1,33 @@
+Given preorder and inorder traversal of a tree, construct the binary tree.
+
+Note:
+You may assume that duplicates do not exist in the tree.
+
+//前序遍历中的第一个点作为树的根节点，根节点在中序遍历中的位置作为区分左右子树的关键。
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
+        return helper(preorder,0,preorder.size(),inorder,0,inorder.size());
+    }
+    TreeNode* helper(vector<int>& preorder, int i, int j, vector<int>& inorder, int ii, int jj)
+    {
+        if (i >= j || ii >= jj)
+            return NULL;
+        int mid = preorder[i];
+        auto f = find(inorder.begin() + ii, inorder.begin() + jj, mid);
+        int dis = f - (inorder.begin() + ii);//与begin()+ii中元素的大小
+        TreeNode* root = new TreeNode(mid);
+        root->left = helper(preorder, i + 1, i + 1 + dis, inorder, ii, ii + dis);
+        root->right = helper(preorder, i + 1 + dis, j, inorder, ii + dis + 1, jj);
+        return root;
+    }
+};
